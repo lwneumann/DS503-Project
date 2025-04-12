@@ -1,0 +1,18 @@
+{
+    "build": {
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
+    },
+    "deploy": {
+      "startCommand": "main.py",
+      "restartPolicyType": "NEVER"
+    },
+    "schedules": [
+      {
+        "cron": "0 * * * *",
+        "name": "gather-data",
+        "command": "main.py"
+      }
+    ]
+}
