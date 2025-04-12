@@ -17,7 +17,16 @@ APPIDS = {
     3240220: 'Grand Theft Auto V',
     250900: 'Binding of Isaac: Rebirth',
     3164500: 'Schedule I',
-    1174180: 'Red Dead Redemption 2'
+    1174180: 'Red Dead Redemption 2',
+    2495100: 'Hello Kitty Island Adventure',
+    1245620: 'Elden Ring',
+    1151340: 'Fallout 76',
+    2933620: 'Call of Duty: Black Ops 6',
+    1144200: 'Ready or Not',
+    1449850: 'Yu-Gi-Oh! Master Duel',
+    281990: 'Stellaris',
+    2379780: 'Balatro',
+    39210: 'FINAL FANTASY XIV Online'
 }
 
 # PostgreSQL Database Connection from Environment Variables
