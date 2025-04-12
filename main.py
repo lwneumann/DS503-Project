@@ -13,7 +13,11 @@ APPIDS = {
     440: 'Team Fortress 2',
     578080: 'PUBG',
     1172470: 'Apex Legends',
-    2767030: 'Marvel Rivals'
+    2767030: 'Marvel Rivals',
+    3240220: 'Grand Theft Auto V',
+    250900: 'Binding of Isaac: Rebirth',
+    3164500: 'Schedule I',
+    1174180: 'Red Dead Redemption 2'
 }
 
 # PostgreSQL Database Connection from Environment Variables
@@ -102,10 +106,10 @@ def get_sale_info(appid):
             if 'price_overview' in details:
                 price = details['price_overview']
                 return {
-                    'on_sale': price['discount_percent'] > 0,
-                    'discount_percent': price['discount_percent'],
-                    'original_price': price['initial'],
-                    'final_price': price['final']
+                    'on_sale': price.get('discount_percent', 0) > 0,
+                    'discount_percent': price.get('discount_percent', 0),
+                    'original_price': price.get('initial', None),
+                    'final_price': price.get('final', None)
                 }
         return {
             'on_sale': False,
