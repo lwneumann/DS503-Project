@@ -5,14 +5,14 @@
       }
     },
     "deploy": {
-      "startCommand": "main.py",
+      "startCommand": "python main.py",
       "restartPolicyType": "NEVER"
     },
     "schedules": [
       {
         "cron": "0 * * * *",
         "name": "gather-data",
-        "command": "main.py"
+        "command": "python main.py"
       }
     ]
 }
