@@ -26,7 +26,10 @@ APPIDS = {
     1449850: 'Yu-Gi-Oh! Master Duel',
     281990: 'Stellaris',
     2379780: 'Balatro',
-    39210: 'FINAL FANTASY XIV Online'
+    39210: 'FINAL FANTASY XIV Online',
+    306130: 'The Elder Scrolls Online',
+    270880: 'American Truck Simulator',
+    1091500: 'Cyberpunk 2077'
 }
 
 # PostgreSQL Database Connection from Environment Variables
